@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Northside Art Gallery</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="nav-menu">
+        <ul>
+          <li class="nav-menu-list"><a id="whatsOn">WHAT'S ON</a></li>
+          <li class="nav-menu-list"><a id="visitUs">VISIT US</a></li>
+          <li class="nav-menu-list"><a id="learn">LEARN</a></li>
+          <li class="nav-menu-list"><a id="support">SUPORT</a></li>
+          <li class="nav-menu-list"><a href="#">SHOP</a></li>
+        </ul>
+      </div>
+      <div class="nav-sub-menu-icon">
+        <i id="m-sub-menu-open" class="fas fa-bars"></i>
+        <i id="m-sub-menu-close" class="fas fa-times"></i>
+      </div>
+      <div class="nav-logo"></div>
+    </header>
+    <!-- navigation bar sub-menu -->
+    <div class="sub-menu-container">
+      <div class="whats-on-sub-menu">
+        <ul>
+          <li><a href="..//html/what-on.html">Exhibitions</a></li>
+          <li><a href="..//html/what-on.html">Events</a></li>
+          <li><a href="..//html/what-on.html">Tours</a></li>
+        </ul>
+      </div>
+      <div class="visit-us-sub-menu">
+        <ul>
+          <li><a href="..//html/visit-us.html">Plan your visit</a></li>
+          <li><a href="..//html/visit-us.html">Hours & admission</a></li>
+        </ul>
+      </div>
+      <div class="learn-sub-menu">
+        <ul>
+          <li><a href="..//html/learn.html">Student programs</a></li>
+          <li><a href="..//html/learn.html">Professinal programs</a></li>
+          <li><a href="..//html/learn.html">Learning resources</a></li>
+          <li><a href="..//html/learn.html">Learning on Youtube</a></li>
+        </ul>
+      </div>
+      <div class="support-sub-menu">
+        <ul>
+          <li><a href="../html/support-us.html">Membership</a></li>
+          <li><a href="../html/support-us.html">Partnership</a></li>
+          <li><a href="../html/support-us.html">Donate</a></li>
+        </ul>
+      </div>
+      <div class="sub-menu-footer">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <!-- sub-menu-close-button -->
+      <div id="sub-menu-close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <!-- mobile-sub-menu -->
+    <div class="mobile-sub-menu-container">
+      <ul>
+        <li>
+          <a id="mobile-whats-on" onclick="showSub()" href="#">WHAT'S ON</a>
+        </li>
+        <div class="nav-menu-list-sub mobile-whats-on-sub">
+          <ul>
+            <li><a href="../html/what-on.html">Exhibition</a></li>
+            <li><a href="../html/what-on.html">Event</a></li>
+            <li><a href="../html/what-on.html">Tours</a></li>
+          </ul>
+        </div>
+        <li>
+          <a id="mobile-visit-us" onclick="showSubVisit()" href="#">VISIT US</a>
+        </li>
+        <div class="nav-menu-list-sub mobile-visit-us-sub">
+          <ul>
+            <li><a href="../html/visit-us.html">Plan your visit</a></li>
+            <li><a href="../html/visit-us.html">Hours & admission</a></li>
+          </ul>
+        </div>
+        <li>
+          <a id="mobile-learn" onclick="showSubLearn()" href="#">LEARN</a>
+        </li>
+        <div class="nav-menu-list-sub mobile-lear-sub">
+          <ul>
+            <li><a href="../html/learn.html">Student program</a></li>
+            <li><a href="../html/learn.html">Professional program</a></li>
+            <li><a href="../html/learn.html">Learning resources</a></li>
+            <li><a href="../html/learn.html">Learning on Youtube</a></li>
+          </ul>
+        </div>
+        <li>
+          <a id="mobile-support" onclick="showSubSupport()" href="#">SUPPORT</a>
+        </li>
+        <div class="nav-menu-list-sub mobile-support-sub">
+          <ul>
+            <li><a href="../html/support-us.html">Membership</a></li>
+            <li><a href="../html/support-us.html">Partnership</a></li>
+            <li><a href="../html/support-us.html">Donate</a></li>
+          </ul>
+        </div>
+        <li><a href="#">SHOP</a></li>
+      </ul>
+      <!-- mobile-sub-menu-footer -->
+      <ul class="mobile-sub-menu-footer">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <div class="learn-img-container">
+      <img src="../images/learn-page/learn-1.jpg" alt="" />
+    </div>
+    <div class="learn-program-container">
+      <ul>
+        <li>
+          <a class="learn-option-1">Student program</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <div class="option-detail learn-option-1-detail">
+          <div class="detail-container">
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+              incidunt.
+            </p>
+            <p>dd/mm/yyyy - dd/mm/yyyy</p>
+          </div>
+        </div>
+        <li>
+          <a class="learn-option-2">Professional program</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <div class="option-detail learn-option-2-detail">
+          <div class="detail-container">
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+              incidunt.
+            </p>
+            <p>dd/mm/yyyy - dd/mm/yyyy</p>
+          </div>
+        </div>
+        <li>
+          <a class="learn-option-3">Learning resources</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <div class="option-detail learn-option-3-detail">
+          <div class="detail-container">
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+              incidunt.
+            </p>
+            <p>dd/mm/yyyy - dd/mm/yyyy</p>
+          </div>
+        </div>
+        <li>
+          <a class="learn-option-4">Learning on Youtube</a
+          ><i class="fas fa-chevron-right"></i>
+        </li>
+        <div class="option-detail learn-option-4-detail">
+          <div class="detail-container">
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+              incidunt.
+            </p>
+            <p>dd/mm/yyyy - dd/mm/yyyy</p>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Company Info</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Partners</a></li>
+          </ul>
+          <small>&copy;NorthsideArtGallery</small>
+        </div>
+        <div class="footer-mid">
+          <h3>Opening Hours</h3>
+          <div class="days-hours">
+            <div class="days">
+              <ul>
+                <li><p>Mon</p></li>
+                <li><p>Tue</p></li>
+                <li><p>Wed</p></li>
+                <li><p>Thu</p></li>
+                <li><p>Fri</p></li>
+                <li><p>Sat</p></li>
+                <li><p>Sun</p></li>
+              </ul>
+            </div>
+            <div class="hours">
+              <ul>
+                <li><small>9:00am - 5:00pm</small></li>
+                <li><small>9:00am - 5:00pm</small></li>
+                <li><small>9:00am - 5:00pm</small></li>
+                <li><small>9:00am - 5:00pm</small></li>
+                <li><small>9:00am - 5:00pm</small></li>
+                <li><small>9:00am - 5:00pm</small></li>
+                <li><small>9:00am - 5:00pm</small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div>
+            <h3>Address</h3>
+            <p>Chermside QLD 4032</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p>0422 190 202</p>
+            <p>info@nag.com</p>
+          </div>
+          <div class="social-media">
+            <h3>Social media</h3>
+            <div class="social-icons">
+              <span><i class="fab fa-facebook"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-youtube"></i></span>
+              <span><i class="fab fa-instagram"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/style.js"></script>
+    <script src="../js/learn.js"></script>
+  </body>
+</html>
